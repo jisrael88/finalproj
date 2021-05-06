@@ -1,0 +1,424 @@
+/* the styles for the elements */
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+/* Clearfix */
+.clearfix::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+html {
+	height: 100%;
+	background-color: black;
+}
+
+body {
+	position: relative;
+	background: black;
+	font-family: 'Antonio', sans-serif;
+	font-size: 100%;
+	min-height: 100%;
+	margin: 0 auto;
+	box-shadow: -5px -5px 15px 5px gray;
+	border-radius: 10px;
+}
+h1 {
+	margin: .5em .75em;
+	font-size: 400%;
+	text-align: center;
+	font-variant: small-caps;
+	color: #1338be;
+	text-shadow: 2px 2px white;
+}
+
+/* the styles for links */
+a:link, a:visited {
+	text-decoration: none;
+}
+a:focus, a:hover {
+	text-decoration: underline;
+}
+
+
+/* the styles for the header */
+header img {
+	padding: 2em;
+	float: left;
+	max-width: 250px;
+	width: 100%;
+}
+header h2 {
+	font-size: 850%;
+	text-align: center;
+	font-variant: small-caps;
+	text-shadow: 2px 2px white;
+	color: #63c5da;
+	margin-left: 60px;
+	padding-top: 40px;
+}
+header h2 a {
+	text-decoration: none !important;
+	color: black;
+}
+header h3 {
+	font-size: 200%;
+	padding: .25em 0 .25em 0;
+
+}
+
+
+
+/* the styles for the navigation menu */
+#nav_menu {
+	clear: both;
+}
+#nav_menu ul {
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+	position: relative;
+}
+#nav_menu ul li {
+	float: left;
+	width: 25%;
+}
+#nav_menu ul li a {
+	display: block;
+	text-align: center;
+	padding: 1em 0;
+	text-decoration: none;
+	font-variant: small-caps;
+	font-size: 150%;
+	background-color: #63c5da;
+	color: black;
+	font-weight: bold;
+}
+#nav_menu a:hover {
+	background-color: #1338be;
+	color: white;
+}
+#nav_menu ul ul {
+	display: none;
+	position: absolute;
+	top: 100%;
+	width: 100%;
+}
+#nav_menu ul ul li a {
+	text-align: left;
+	padding: .5em;
+
+}
+#nav_menu ul ul li {
+	float: none;
+
+}
+#nav_menu ul li:hover > ul {
+	display: block;
+}
+#nav_menu > ul::after {
+	content: "";
+	clear: both;
+	display: block;
+}
+
+/* bookmarks bar */
+.bookmarks {
+	float: left;
+	width: 12%;
+	margin: 10em 2em 0 3em;
+	position: -webkit-sticky;
+	position: sticky;
+	top: 100px;
+}
+.bookmarks ul {
+	list-style: none;
+	width: 95%;
+	margin: 2em 0 0;
+}
+.bookmarks ul li {
+	margin: 0 1em 3px 0;
+	transition: all .5s;
+}
+.bookmarks ul li a {
+	padding: .5em .5em;
+	display: block;
+	background-color: #404040;
+	border: 1px solid #808080;
+	color: white;
+	font-weight: bold;
+	text-decoration: none;
+	border-radius: 5px;
+	margin-left: 0;
+	transition: all .5s;
+}
+.bookmarks ul li a:hover {
+	background-color: black;
+	color: #63c5da;
+	border: 1px solid #63c5da;
+}
+.bookmarks ul li:hover {
+	margin: 0 0 3px 1em;
+}
+
+/* the styles for the section */
+section {
+	margin-left: auto;
+	margin-right: auto;
+	display: block;
+	width: 75%;
+	padding: 0 2.5% 20px 2.5%;
+	background-color: black;
+}
+section p {
+	font: 200%;
+	line-height: 1.5;
+	color: black;
+}
+section img {
+	padding-top: 20px;
+	margin-left: auto;
+	margin-right: auto;
+	display: block;
+	padding-bottom: 10px;
+	max-width: 600px;
+
+}
+section div {
+	margin-top: 10px;
+	margin-bottom: 10px;
+}
+section ul {
+	color: black;
+}
+
+
+
+#bottombuffer {
+	height: 100px;
+	padding-bottom: 100px;
+}
+
+/* div styles */
+#nwhl {
+	border: 5px solid #a9a9a9;
+	border-radius: 25px;
+	padding: 1em;
+	background-color: #e8ffff;
+}
+#nwhl h2 {
+	text-align: center;
+	font-size: 350%;
+	font-variant: small-caps;
+	text-shadow: 2px 2px black;
+	color: #63c5da;
+}
+#teams {
+	border: 5px solid #a9a9a9;
+	border-radius: 25px;
+	padding: 1em;
+	background-color: #e8ffff;
+	
+}
+#teams h2 {
+	text-align: center;
+	font-size: 350%;
+	font-variant: small-caps;
+	text-shadow: 2px 2px black;
+	color: #63c5da;
+}
+#teams ul {
+    text-decoration: none;
+	padding: 1em;
+}
+#seasons {
+	border: 5px solid #a9a9a9;
+	border-radius: 25px;
+	padding: 1em;
+	background-color: #e8ffff;
+}
+#seasons h2 {
+	text-align: center;
+	font-size: 350%;
+	font-variant: small-caps;
+	text-shadow: 2px 2px black;
+	color: #63c5da;
+}
+#seasons h3 {
+    text-align: center;
+	font-size: 150%;
+	text-shadow: 2px 2px black;
+	color: #63c5da;
+}
+#pwhpa {
+	border: 5px solid #a9a9a9;
+	border-radius: 25px;
+	padding: 1em;
+	background-color: #e8ffff;
+}
+#pwhpa h2 {
+	text-align: center;
+	font-size: 350%;
+	font-variant: small-caps;
+	text-shadow: 2px 2px black;
+	color: #63c5da;
+}
+#ush {
+    border: 5px solid #a9a9a9;
+	border-radius: 25px;
+	padding: 1em;
+	background-color: #e8ffff;
+}
+#ush h2 {
+    text-align: center;
+	font-size: 350%;
+	font-variant: small-caps;
+	text-shadow: 2px 2px black;
+	color: #63c5da;
+}
+
+/* the styles for the footer */
+footer {
+	background-color: black;
+	clear: both;
+	border-top: 3px solid #000000;
+	width: 100%;
+	border-radius: 0 0 10px 10px;
+
+}
+footer p {
+	text-align: center;
+	color: white;
+	font-size: 90%;
+	font-variant: small-caps;
+	font-weight: bold;
+	padding: 2em 0;
+}
+
+/* scroll to top button */
+#myBtn {
+	display: none; /* Hidden by default */
+	width: 88%;
+	z-index: 99; /* Make sure it does not overlap */
+	border: 1px solid #808080;
+	outline: none; /* Remove outline */
+	background-color: #404040; /* Set a background color */
+	color: white; /* Text color */
+	font-weight: bold;
+	cursor: pointer; /* Add a mouse pointer on hover */
+	padding: .5em .5em;
+	margin: 0 1em 3px 0;
+	text-align: left;
+	transition: all .5s;
+	font-family: 'Nova Square', cursive;
+	font-size: 100%;
+	border-radius: 5px;
+}
+#myBtn:hover {
+	background-color: black;
+	color: #63c5da;
+	margin: 0 0 3px 1em;
+	border: 1px solid #63c5da;
+}
+#cornerBtn {
+	display: none; /* Hidden by default */
+	position: fixed;
+	left: 5px;
+	bottom: 150px;
+	z-index: 99; /* Make sure it does not overlap */
+	border: 1px solid black;
+	outline: none; /* Remove outline */
+	font-weight: bold;
+	cursor: pointer; /* Add a mouse pointer on hover */
+	padding: .5em .5em;
+	margin: 0 1em 3px 0;
+	font-family: 'Antonio', sans-serif;
+	font-size: 100%;
+	border-radius: 5px;
+	background-color: rgba(0,0,0,.6);
+	color: white;
+	transition: all .5s;
+}
+#cornerBtn:hover {
+	background-color: rgba(0,0,0,1);
+	color: #63c5da;
+	border: 1px solid #63c5da;
+}
+
+
+
+/* hide the slicknav in large-screen view */
+.slicknav_menu {
+	display: none;
+}
+
+
+
+/* tablet portrait to standard 960 */
+@media only screen and (max-width: 959px) {
+	body, aside {
+		box-shadow: none;
+		border-radius: 0;
+	}
+	footer {
+		border-radius: 0;
+	}
+	header h2 {
+		font-size: 300%;
+	}
+}
+
+
+
+/* mobile landscape to tablet portrait */
+@media only screen and (max-width: 767px) {
+	
+	header img { 
+		float: none; 
+		padding: 0;
+		margin: 0 auto;
+	}
+	header { text-align: center; }
+	header h2, header h3 {
+		padding: 0 0 .25em;
+		font-size: 200%;
+	}
+	h1 {
+		font-size: 200%;
+	}
+	section, aside {
+		float: none;
+		width: 99%;
+		margin: 0 auto;
+		padding: .5em;
+	}
+
+	/* hide the navigation menu */
+	#nav_menu {
+		display: none;
+	}
+	
+	/* and replace it with the slicknav menu */
+	.slicknav_menu {
+		display: block;
+		text-align: left !important;
+		background-color: #63c5da !important;
+	}
+	.bookmarks {
+		display: none;
+	}
+}
+
+
+
+/* mobile portrait to mobile landscape */
+@media only screen and (max-width: 479px) {
+	body { font-size: 90%; }
+	section img {
+		max-width: 80%;
+	}
+}
